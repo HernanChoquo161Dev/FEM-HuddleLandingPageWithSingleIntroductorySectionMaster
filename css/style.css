@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  max-width: 1600px;
+  max-width: 2000px;
 
   padding: 6rem 7rem;
   padding-bottom: 0;
@@ -135,12 +135,18 @@ body {
   filter: invert(75%) sepia(66%) saturate(1417%) hue-rotate(240deg)
     brightness(94%) contrast(93%);
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   /*main page*/
   .main-page {
     position: relative;
     top: 50vh;
     transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 1900px) {
+  /*component*/
+  html {
+    font-size: 77%;
   }
 }
 @media screen and (max-width: 1440px) {
