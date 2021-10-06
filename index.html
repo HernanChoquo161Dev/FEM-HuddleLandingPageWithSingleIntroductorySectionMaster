@@ -8,26 +8,56 @@
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <!--<div class="icon-attribution">
+    <a href="https://iconscout.com/icons/instagram" target="_blank">Instagram Icon</a> by <a href="https://iconscout.com/contributors/unicons">Unicons Font</a> on <a href="https://iconscout.com">Iconscout</a>
+  </div>-->
 
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <!--main page-->
+  <main class="main-page">
+    <!--component-->
+    <div class="home-page">
+      <!--logo section-->
+      <div class="home-page___logo-box">
+        <img src="./images/logo.svg" alt="image log" class="home-page__logo">
+      </div>
+      <!--presentation section-->
+      <div class="home-page__presentation">
+        <!--image presentation section-->
+        <div class="home-page__image-devices-box">
+          <img src="./images/illustration-mockups.svg" alt="image devices" class="home-page__image-devices">
+        </div>
+        <!--text presentation section-->
+        <div class="home-page__box-text">
+          <h1 class="home-page__tittle">
+            Build The Community<br> Your Fans Will Love
+          </h1>
+          <p class="home-page__text">
+            Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+            Create connections with your users as you engage in genuine discussion.
+          </p>
+          <a href="#" class="home-page__register">Register</a>
+        </div>
+      </div>
+      <!--social network section-->
+      <div class="home-page__social-network-box">
+        <a href="#" class="social-network social-network--margin">
+          <img src="./images/facebook.svg" alt="facebook link" class="social-network__img">
+        </a>
+        <a href="#" class="social-network social-network--margin">
+          <img src="./images/twitter.svg" alt="twitter link" class="social-network__img">
+        </a>
+        <a href="#" class="social-network">
+          <img src="./images/instagram.svg" alt="instagram link" class="social-network__img">
+        </a>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
