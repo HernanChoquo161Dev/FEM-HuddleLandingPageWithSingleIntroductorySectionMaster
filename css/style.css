@@ -17,10 +17,10 @@ html {
 }
 /*container page*/
 body {
-  height: 100vh;
+  min-height: 100vh;
 
   background-color: var(--color-violet);
-  background-size: contain;
+  background-size: cover;
   background-image: url(../images/bg-desktop.svg);
   background-repeat: no-repeat;
 
@@ -135,6 +135,17 @@ body {
   filter: invert(75%) sepia(66%) saturate(1417%) hue-rotate(240deg)
     brightness(94%) contrast(93%);
 }
+@media screen and (min-width: 1400px) and (max-height: 800px) {
+  body {
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1024px) and (max-height: 600px) {
+  body {
+    background-size: contain;
+  }
+}
+
 @media screen and (min-width: 2000px) {
   /*main page*/
   .main-page {
@@ -160,9 +171,6 @@ body {
   html {
     font-size: 41.5%;
   }
-  body {
-    background-size: cover;
-  }
 }
 @media screen and (max-width: 768px) {
   /*component*/
@@ -171,7 +179,7 @@ body {
   }
   body {
     background-image: url(../images/bg-mobile.svg);
-    background-size: cover;
+    background-size: contain;
   }
   /*component*/
   .home-page {
@@ -226,9 +234,6 @@ body {
   /*component*/
   html {
     font-size: 43.5%;
-  }
-  body {
-    background-size: contain;
   }
 }
 @media screen and (max-width: 426px) {
